@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Toolbar } from '../components/toolbar';
 import employeeData from '../db.json'
 
@@ -13,7 +14,7 @@ export  function EOM ({ employee }) {
                 <div className='text-center'>
                     <h3 className="text-black">{ employee.name }</h3>
                     <h6 className="text-black">{ employee.position }</h6>
-                    <img className='w-60 pt-3 pb-3 rounded-full' src={ employee.image } alt="Empoyee"/>
+                    <Image className='w-60 pt-3 pb-3 rounded-full' src={ employee.image } alt="Empoyee"/>
                     <p className="text-black">{ employee.description } </p>
                 </div>
             </div>

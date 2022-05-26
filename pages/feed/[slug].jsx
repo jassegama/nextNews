@@ -14,7 +14,7 @@ export default function Feed({ pageNumber, articles }) {
                 <div className="w-[500px] mb-6 pb-6 border-b-[1px] border-solid border-black" key={index}>
                     <h1 onClick={() => (window.location.href= article.url)} className="text-base cursor-pointer text-center">{article.title}</h1>
                     <p>{article.description}</p>
-                    {!!article.urlToImage && <img className="w-full" src={article.urlToImage} />}
+                    {!!article.urlToImage && <image className="w-full" src={article.urlToImage} />}
                 </div>
             ))}            
             </div>

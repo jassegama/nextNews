@@ -13,7 +13,7 @@ export default function Index() {
             </div>
 
             <footer className="text-sm text-neutral-400 text-center">
-                <small>&copy; Copyright , {(new Date().getFullYear())} <a className="underline" href="https://www.linkedin.com/in/jasse-gama-a6090830/" target="_blank">Jasse Gama</a>. All rights Reserved</small>
+                <small>&copy; Copyright , {(new Date().getFullYear())} <a className="underline" href="https://www.linkedin.com/in/jasse-gama-a6090830/">Jasse Gama</a>. All rights Reserved</small>
             </footer>
 
         </div>
