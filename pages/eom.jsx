@@ -9,7 +9,7 @@ export  function EOM ({ employee }) {
             <Toolbar />
 
             <div className='flex flex-1 items-center flex-col mt-12'>
-                <h1 className="text-black">Employer Of The Month</h1>
+                <h1 className="text-black">Basic Information</h1>
                 <div className='text-center'>
                     <h3 className="text-black">{ employee.name }</h3>
                     <h6 className="text-black">{ employee.position }</h6>
@@ -23,7 +23,7 @@ export  function EOM ({ employee }) {
 
 export const getServerSideProps = async pageContext => {
     const apiResponse = await fetch(
-        'https://raw.githubusercontent.com/jassegama/nextnews/main/db.json'
+        'https://raw.githubusercontent.com/jassegama/nextnews/master/db.json'
         );
     const employee = await apiResponse.json();
 
