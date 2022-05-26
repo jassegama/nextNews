@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-[#fff] p-0 m-0
+}
+
+@layer base{
+  /* latin-ext */
+  @font-face {
+    font-family: 'Enriqueta';
+    src: url(https://fonts.gstatic.com/s/enriqueta/v15/gokpH6L7AUFrRvV44HVrv2m3kdxFm6Q.woff2)}
+
+    /* latin-ext */
+  @font-face {
+    font-family: 'Roboto Flex'; 
+    src: url(https://fonts.gstatic.com/s/robotoflex/v8/NaNeepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGfttPZktqc2VdZ80KvCLZaPcSBZtOx2MifRuWR28sPJtUMbsFEK6cRrleUx9Xgbm3WLHa_F4Ep4Fm0PN19Ik5Dntczx0wZGzhPlL1YNMYKbv9_1IQXOw7AiUJVXRrV8cWW4O8LJCoXjCnwSRSaLshNP1d9-8mF9lp.woff2) format('woff2');
+
+  }
+}
+h1 {
+  @apply font-primary text-4xl font-bold
+}
+
+p {
+  @apply font-secondary text-sm font-light mb-4
+}
+
+
+.page-container {
+  @apply flex flex-col h-screen 
+}
