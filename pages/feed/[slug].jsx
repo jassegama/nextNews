@@ -14,8 +14,8 @@ export default function Feed({ pageNumber, articles }) {
             {articles.map((article, index) => (
                 // post
                
-              <div className="mt-10 flex flex-row border-b-[1px] border-solid border-black"> 
-                <div className="w-1/2 mb-6 mr-3" key={index}>
+              <div className="mt-10 flex flex-row border-b-[1px] border-solid border-black" key={index}> 
+                <div className="w-1/2 mb-6 mr-3" >
                         {!!article.urlToImage && <img className="w-full" src={article.urlToImage} />}        
                 </div>
                 <div className="w-1/2 pt-2">
