@@ -8,13 +8,20 @@ export default function Feed({ pageNumber, articles }) {
         // main
         <div>
             <Toolbar />
-            <div className="flex mt-12 items-center flex-col"> 
+
+
+            <div className="flex w-8/12 mt-20 mx-auto flex-col"> 
             {articles.map((article, index) => (
                 // post
-                <div className="w-[500px] mb-6 pb-6 border-b-[1px] border-solid border-black" key={index}>
-                    <h1 onClick={() => (window.location.href= article.url)} className="text-base cursor-pointer text-center">{article.title}</h1>
-                    <p>{article.description}</p>
-                    {!!article.urlToImage && <img className="w-full" src={article.urlToImage} />}
+               
+              <div className="mt-10 flex flex-row border-b-[1px] border-solid border-black"> 
+                <div className="w-1/2 mb-6 mr-3" key={index}>
+                        {!!article.urlToImage && <img className="w-full" src={article.urlToImage} />}        
+                </div>
+                <div className="w-1/2 pt-2">
+                            <h1 onClick={() => (window.location.href= article.url)} className="cursor-pointer text-left mb-6 text-[#1D2951]">{article.title}</h1>
+                            <p className="text-[#1D2951]">{article.description}</p>
+                        </div>
                 </div>
             ))}            
             </div>

@@ -21,11 +21,11 @@ body {
   }
 }
 h1 {
-  @apply font-primary text-4xl font-bold
+  @apply font-primary text-xl font-bold
 }
 
 p {
-  @apply font-secondary text-sm font-light mb-4
+  @apply font-secondary text-sm font-light
 }
 
 
