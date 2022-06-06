@@ -17,7 +17,7 @@ export function Toolbar() {
         <nav className="p-5 shadow bg-[#1D2951] md:flex md:items-center md:justify-between">
             <div className="flex justify-between items-center">
                     <span>
-                        <h2 className="text-white font-primary cursor-pointer">NEWS HUBB</h2>
+                        <h2 onClick={() => router.push('/')} className="text-white font-primary cursor-pointer">NEWS HUBB</h2>
                     </span>
 
                     <span className="text-3xl cursor-pointer mx-2 md:hidden block">
