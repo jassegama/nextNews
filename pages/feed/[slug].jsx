@@ -11,17 +11,17 @@ export default function Feed({ pageNumber, articles }) {
             <Toolbar />
 
 
-            <div className="flex w-8/12 mt-20 mx-auto flex-col"> 
+            <div className="flex w-[90%] md:w-8/12 mt-10 md:mt-20 mx-auto flex-col"> 
             {articles.map((article, index) => (
                 // post
                
-              <div className="mt-10 flex flex-row border-b-[1px] border-solid border-black" key={index}> 
+              <div className="mt-10 flex flex-col md:flex-row border-b-[1px] border-solid border-black" key={index}> 
                 {!!article.urlToImage &&
-                <div className="w-1/2 mb-6 mr-3" >
+                <div className="w-full md:w-1/2 mb-6 mr-3" >
                          <img className="w-full" src={article.urlToImage} />   
                 </div>
                 }
-                <div className="w-1/2 pt-2">
+                <div className="w-full md:w-1/2 pt-2">
                             <h1 onClick={() => (window.location.href= article.url)} className="cursor-pointer text-left mb-6 text-[#1D2951]">{article.title}</h1>
                             <p className="text-[#1D2951]">{article.description}</p>
                         </div>

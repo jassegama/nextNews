@@ -3,7 +3,6 @@ import { Toolbar } from '../components/toolbar';
 import employeeData from '../db.json'
 
 export  function EOM ({ employee }) {
-    console.log(employee);
     return(
         <div className='page-container'>
 
