@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { Footer } from "../../components/footer";
 import { Toolbar } from "../../components/toolbar";
 export default function Feed({ pageNumber, articles }) {
 
@@ -15,9 +16,11 @@ export default function Feed({ pageNumber, articles }) {
                 // post
                
               <div className="mt-10 flex flex-row border-b-[1px] border-solid border-black" key={index}> 
+                {!!article.urlToImage &&
                 <div className="w-1/2 mb-6 mr-3" >
-                        {!!article.urlToImage && <img className="w-full" src={article.urlToImage} />}        
+                         <img className="w-full" src={article.urlToImage} />   
                 </div>
+                }
                 <div className="w-1/2 pt-2">
                             <h1 onClick={() => (window.location.href= article.url)} className="cursor-pointer text-left mb-6 text-[#1D2951]">{article.title}</h1>
                             <p className="text-[#1D2951]">{article.description}</p>
@@ -46,6 +49,7 @@ export default function Feed({ pageNumber, articles }) {
                 className={pageNumber === 5 ? "cursor-not-allowed text-gray-500" : "cursor-pointer" }>Next Page</div>
                 
             </div>
+            <Footer />
         </div>
 
     );
