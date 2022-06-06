@@ -7,7 +7,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 export function Toolbar() {
     const [toggleMenu, setToggleMenu] = useState(false)
     
-    let styles = {divClass: "bg-[#1D2951] w-full md:w-auto left-0 md:flex md:items-center z-[-0] md:z-auto md:static absolute md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"}
+    let styles = {divClass: "bg-[#1D2951] w-full md:w-auto left-0 md:flex md:items-center z-[0] md:z-auto md:static absolute md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"}
     let stylesMob = {divClass: "bg-[#1D2951] w-full md:w-auto left-0 md:flex md:items-center z-[0] md:z-auto md:static absolute md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-100 top-[80] transition-all ease-in duration-200"}
     const router = useRouter();
 
